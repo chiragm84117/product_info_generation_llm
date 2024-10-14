@@ -114,6 +114,7 @@ with col5:
 # uploaded image processing
 if picture is not None:
     # taking the imput of the image
+    print("yes")
     bytes_data = picture.getvalue()
     cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 
